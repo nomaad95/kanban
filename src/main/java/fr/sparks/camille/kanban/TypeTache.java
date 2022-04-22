@@ -13,7 +13,7 @@ public class TypeTache {
     private String couleur;
 
     @Column(name = "DESCRIPTION")
-    private null description;
+    private String description;
 
     @Column(name = "NOM")
     private String nom;
@@ -34,11 +34,11 @@ public class TypeTache {
         this.couleur = couleur;
     }
 
-    public null getDescription() {
+    public String getDescription() {
         return this.description;
     }
 
-    public void setDescription(null description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 

@@ -19,10 +19,10 @@ public class Ville {
     private String complement;
 
     @Column(name = "LATITUDE")
-    private null latitude;
+    private double latitude;
 
     @Column(name = "LONGITUDE")
-    private null longitude;
+    private double longitude;
 
     @Column(name = "NOM")
     private String nom;
@@ -59,19 +59,19 @@ public class Ville {
         this.complement = complement;
     }
 
-    public null getLatitude() {
+    public double getLatitude() {
         return this.latitude;
     }
 
-    public void setLatitude(null latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
-    public null getLongitude() {
+    public double getLongitude() {
         return this.longitude;
     }
 
-    public void setLongitude(null longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 

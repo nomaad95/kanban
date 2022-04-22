@@ -1,6 +1,7 @@
 package fr.sparks.camille.kanban;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "PROJET")
@@ -13,10 +14,10 @@ public class Projet {
     private String code;
 
     @Column(name = "DATE_HEURE_CREATION")
-    private null dateHeureCreation;
+    private Date dateHeureCreation;
 
     @Column(name = "DATE_HEURE_LIVRAISON")
-    private null dateHeureLivraison;
+    private Date dateHeureLivraison;
 
     @Column(name = "NOM")
     private String nom;
@@ -40,19 +41,19 @@ public class Projet {
         this.code = code;
     }
 
-    public null getDateHeureCreation() {
+    public Date getDateHeureCreation() {
         return this.dateHeureCreation;
     }
 
-    public void setDateHeureCreation(null dateHeureCreation) {
+    public void setDateHeureCreation(Date dateHeureCreation) {
         this.dateHeureCreation = dateHeureCreation;
     }
 
-    public null getDateHeureLivraison() {
+    public Date getDateHeureLivraison() {
         return this.dateHeureLivraison;
     }
 
-    public void setDateHeureLivraison(null dateHeureLivraison) {
+    public void setDateHeureLivraison(Date dateHeureLivraison) {
         this.dateHeureLivraison = dateHeureLivraison;
     }
 

@@ -6,6 +6,8 @@ import javax.persistence.*;
 @Table(name = "PROJET_DEVELOPPEURS")
 public class ProjetDeveloppeurs {
     @Column(name = "PROJETS_ID")
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long projetsId;
 
     @Column(name = "DEVELOPPEURS_ID")

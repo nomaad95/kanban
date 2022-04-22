@@ -1,6 +1,7 @@
 package fr.sparks.camille.kanban;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "TACHE")
@@ -10,16 +11,16 @@ public class Tache {
     private Long id;
 
     @Column(name = "DATE_CREATION")
-    private null dateCreation;
+    private Date dateCreation;
 
     @Column(name = "INTITULE")
     private String intitule;
 
     @Column(name = "NB_HEURES_EFFECTIVES")
-    private null nbHeuresEffectives;
+    private int nbHeuresEffectives;
 
     @Column(name = "NB_HEURES_PREVUES")
-    private null nbHeuresPrevues;
+    private int nbHeuresPrevues;
 
     @Column(name = "COLONNE_ACTUELLE_ID")
     private Long colonneActuelleId;
@@ -41,11 +42,11 @@ public class Tache {
         this.id = id;
     }
 
-    public null getDateCreation() {
+    public Date getDateCreation() {
         return this.dateCreation;
     }
 
-    public void setDateCreation(null dateCreation) {
+    public void setDateCreation(Date dateCreation) {
         this.dateCreation = dateCreation;
     }
 
@@ -57,19 +58,19 @@ public class Tache {
         this.intitule = intitule;
     }
 
-    public null getNbHeuresEffectives() {
+    public int getNbHeuresEffectives() {
         return this.nbHeuresEffectives;
     }
 
-    public void setNbHeuresEffectives(null nbHeuresEffectives) {
+    public void setNbHeuresEffectives(int nbHeuresEffectives) {
         this.nbHeuresEffectives = nbHeuresEffectives;
     }
 
-    public null getNbHeuresPrevues() {
+    public int getNbHeuresPrevues() {
         return this.nbHeuresPrevues;
     }
 
-    public void setNbHeuresPrevues(null nbHeuresPrevues) {
+    public void setNbHeuresPrevues(int nbHeuresPrevues) {
         this.nbHeuresPrevues = nbHeuresPrevues;
     }
 
